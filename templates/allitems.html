@@ -1,0 +1,15 @@
+<html>
+	<head></head>
+	<body>
+		{% include "header.html" %}
+		<h2>{{ category.name }}</h2>
+		<ul>
+			{% for item in items %}
+			<li>
+				<a href="{{ url_for('showItem', category_id=item.category_id, item_id=item.id) }}">{{ item.name }}</a>
+				<br>
+			</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

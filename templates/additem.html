@@ -1,0 +1,23 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h2>Add Item</h2>
+		<form action="{{ url_for('addItem') }}" method='post'>
+			<select name="category">
+				{% for category in categories %}
+					<option value="{{ category.id }}">{{ category.name }}</option>
+				{% endfor %}
+			</select>
+			<br>
+			<br>
+			<input type='text' size='80' name='name' placeholder='Name'>
+			<br>
+			<br>
+			<textarea name='description' size='250' placeholder='Description'></textarea>
+			<br>
+			<br>
+			<input type='submit' value='Add'>
+		</form>
+	</body>
+</html>

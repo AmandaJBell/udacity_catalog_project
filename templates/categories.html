@@ -1,0 +1,25 @@
+<html>
+	<head>
+	</head>
+	<body>
+		{% include "header.html" %}
+		<br>
+		<a href="{{ url_for('addItem') }}">Add Item</a>
+		<h2>Categories</h2>
+		<ul>
+			{% for category in categories %}
+			<li>
+				<a href="{{ url_for('showAllItems', category_id=category.id) }}">{{ category.name }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<h2>New Items</h2>
+		<ul>
+			{% for item in items %}
+			<li>
+				<a href="{{ url_for('showItem', category_id=item.category_id, item_id=item.id) }}">{{ item.name }} ({{ item.category_name }})</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
