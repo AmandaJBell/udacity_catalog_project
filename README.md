@@ -27,4 +27,4 @@ How to Run Project
     ```cd /vagrant```
 
 **5.** Finally run the project by typing the following into terminal:
-    ```python views.py``
+    ```python views.py```
