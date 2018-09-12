@@ -7,7 +7,7 @@ This is the fourth project in the Udacity Full Stack Nanodegree. The purpose of 
 
 Required Libraries and Dependencies
 -----------------------------------
-This project requires Python v3, Flask, and SQLAlchemy to be installed. 
+This project requires Python v2.\*, Flask, and SQLAlchemy to be installed. 
 
 In addition Vagrant and VirtualBox are also required.
 
