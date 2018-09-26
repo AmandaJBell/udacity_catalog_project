@@ -11,8 +11,6 @@ This project requires Python v2.\*, Flask, and SQLAlchemy to be installed.
 
 In addition Vagrant and VirtualBox are also required.
 
-You will also need to retrieve your own Google+ Oauth2 client_id and client_secret, and will need to add them to login.html, views.py, and client_secret.json where specified.
-
 How to Run Project
 ------------------
 **1.** After cloning the project, navigate to the repo in your terminal and unzip newsdata.zip.
